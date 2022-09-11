@@ -25,7 +25,7 @@ You can check all of the installed packages in template/package.json file, but i
 
 ## Usage instructions
 
-You can use this template with this command: `npx create-expo-app -t https://github.com/haris523/expo-starter.git`. After creating the project, navigate to the project folder, run the command `npx husky install`.
+You can use this template with this command: `expo init my-app --template @haris523/expo-starter-template`. After creating the project, navigate to the project folder, run the command `npx husky install`.
 
 That's it.
 Just use a expo run:ios or expo:run android command based on the platform.
