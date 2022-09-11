@@ -10,7 +10,6 @@ enableFreeze(true)
 const App = () => {
     const [initialTheme] = useState<string | null>(null)
     //good function to persist theme
-
     // const getTheme = async () => {
     //   const savedTheme = await AsyncStorage.getItem("theme");
     //   if (savedTheme) setInitialTheme(savedTheme);
