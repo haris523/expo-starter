@@ -1,8 +1,25 @@
-import { registerRootComponent } from 'expo';
+import { registerRootComponent } from 'expo'
+import { NavigationContainer } from '@react-navigation/native'
+import { Provider } from 'react-redux'
+import store from './src/redux/store'
+import React from 'react'
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
+import { StyleSheet } from 'react-native'
 
-import App from './App';
+const MainApp = () => (
+    <Provider store={store}>
+        <GestureHandlerRootView style={localStyles.flexOne}>
+            <NavigationContainer>
+                <App />
+            </NavigationContainer>
+        </GestureHandlerRootView>
+    </Provider>
+)
 
-// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
-// It also ensures that whether you load the app in Expo Go or in a native build,
-// the environment is set up appropriately
-registerRootComponent(App);
+const localStyles = StyleSheet.create({
+    flexOne: {
+        flex: 1
+    }
+})
+import App from './App'
+registerRootComponent(MainApp)
