@@ -1,6 +1,6 @@
 {
     "name": "@haris523/expo-starter-template",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "scripts": {
         "start": "expo start --dev-client",
         "android": "expo run:android",
